@@ -1,0 +1,15 @@
+# Editor settings are local to each developer.
+.vscode/
+
+# Dependency folders are not needed by this static project.
+node_modules/
+
+# Operating-system metadata files should not enter version control.
+.DS_Store
+Thumbs.db
+
+# Temporary editor and build files are disposable.
+*.tmp
+*.temp
+*.log
+*.swp

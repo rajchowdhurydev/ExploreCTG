@@ -1,0 +1,25 @@
+<!doctype html>
+<!-- Registration page collects a demo account and one of the three required roles. -->
+<html lang="en"><head>
+<!-- Responsive metadata and shared visual rules. -->
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Create Account | Explore Chattogram</title><link rel="stylesheet" href="css/style.css">
+</head><body class="auth-page">
+<!-- Compact header preserves a clear return route. -->
+<header class="auth-header container"><a class="brand" href="index.html"><span class="brand-mark">EC</span><span>Explore <strong>Chattogram</strong></span></a><a class="text-link" href="index.html">← Back to home</a></header>
+<main class="auth-main"><section class="auth-card auth-card-wide" aria-labelledby="register-title">
+<!-- The role radio group makes exactly one role selectable by keyboard or pointer. -->
+<div class="auth-intro"><p class="eyebrow">Start planning</p><h1 id="register-title">Create your account</h1><p>Your details stay in this browser. Pick the role that matches your experience.</p></div>
+<form id="register-form" novalidate>
+<fieldset class="role-fieldset"><legend>I am joining as a</legend><div class="role-options">
+<label class="role-option"><input type="radio" name="role" value="traveler" checked><span><strong>Traveler</strong><small>Plan trips, budgets and itineraries.</small></span></label>
+<label class="role-option"><input type="radio" name="role" value="guide"><span><strong>Tourist Guide</strong><small>Manage your guide profile.</small></span></label>
+<label class="role-option"><input type="radio" name="role" value="admin"><span><strong>Admin</strong><small>Use the demonstration admin session.</small></span></label>
+</div></fieldset>
+<div class="form-row"><div><label for="register-name">Full name</label><input id="register-name" name="name" autocomplete="name" placeholder="Your full name" minlength="2" required></div><div><label for="register-email">Email address</label><input id="register-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required></div></div>
+<div class="form-row"><div><label for="register-password">Password</label><div class="password-field"><input id="register-password" name="password" type="password" autocomplete="new-password" placeholder="At least 6 characters" minlength="6" required><button class="password-toggle" type="button" data-password-toggle data-target="register-password">Show</button></div></div><div><label for="confirm-password">Confirm password</label><div class="password-field"><input id="confirm-password" name="confirmPassword" type="password" autocomplete="new-password" placeholder="Repeat password" minlength="6" required><button class="password-toggle" type="button" data-password-toggle data-target="confirm-password">Show</button></div></div></div>
+<!-- JavaScript fills this live region with local validation results. --><p class="form-message" id="register-message" aria-live="polite"></p><button class="button button-primary auth-submit" type="submit">Create account →</button>
+</form><p class="auth-switch">Already have an account? <a href="login.html">Log in</a></p><p class="auth-note">Static demo only: never enter a real password.</p>
+</section></main>
+<!-- The module handles local account creation, sessions and role routing. --><script src="js/auth.js"></script>
+</body></html>

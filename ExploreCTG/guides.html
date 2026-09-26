@@ -1,0 +1,10 @@
+<!doctype html>
+<!-- Guide listing page; guide cards are generated from the local mock JSON file. -->
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Travel Guides | Explore Chattogram</title><link rel="stylesheet" href="css/style.css"></head><body>
+<!-- Shared navigation uses app.js to adapt the login link for an active session. -->
+<header class="site-header"><div class="container nav-wrapper"><a class="brand" href="index.html"><span class="brand-mark">EC</span><span>Explore <strong>Chattogram</strong></span></a><nav class="main-nav"><a href="index.html">Home</a><a href="destinations.html">Destinations</a><a class="active" href="guides.html">Travel Guides</a><a href="budget.html">Budget</a><a href="itinerary.html">Itinerary</a><a class="nav-login" data-auth-link href="login.html">Login</a></nav></div></header>
+<main><section class="page-hero"><div class="container"><p class="eyebrow">Travel with local context</p><h1>Meet local tourist guides</h1><p>These are mock guide profiles for planning a safer, more informed visit.</p></div></section>
+<!-- guides.js replaces this status and grid after fetching data/guides.json. -->
+<section class="section"><div class="container"><p class="results-status" id="guide-status" aria-live="polite">Loading available guides…</p><div class="destination-card-grid" id="guide-grid"></div><p class="form-message" id="guide-message" aria-live="polite"></p></div></section></main>
+<!-- Compact shared footer. --><footer class="site-footer"><div class="container footer-bottom"><span>© 2026 Explore Chattogram</span><a href="index.html">Back to home ↑</a></div></footer>
+<script src="js/app.js"></script><script src="js/guides.js"></script></body></html>

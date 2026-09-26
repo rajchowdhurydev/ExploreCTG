@@ -1,0 +1,20 @@
+<!doctype html>
+<!-- Destination browser page; cards are rendered from local data/destinations.json. -->
+<html lang="en"><head>
+<!-- Standard responsive page metadata and shared visual system. -->
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Destinations | Explore Chattogram</title><link rel="stylesheet" href="css/style.css">
+</head><body>
+<!-- Global navigation matches the landing page and exposes every major planning route. -->
+<header class="site-header"><div class="container nav-wrapper"><a class="brand" href="index.html"><span class="brand-mark">EC</span><span>Explore <strong>Chattogram</strong></span></a><button class="menu-toggle" type="button" data-menu-toggle aria-label="Open navigation menu"><span></span><span></span><span></span></button><nav class="main-nav" data-main-nav><a href="index.html">Home</a><a class="active" href="destinations.html">Destinations</a><a href="guides.html">Travel Guides</a><a href="budget.html">Budget</a><a href="itinerary.html">Itinerary</a><a class="nav-login" href="login.html">Login</a></nav></div></header>
+<main>
+<!-- Page hero introduces search without duplicating the destination cards themselves. -->
+<section class="page-hero"><div class="container"><p class="eyebrow">Choose your next view</p><h1>Discover Chattogram and beyond</h1><p>Use local planning notes to find a beach, hill, heritage or family-friendly day out.</p></div></section>
+<!-- Search and category controls are progressive enhancement: JavaScript filters local rendered cards. -->
+<section class="section destination-browser"><div class="container"><div class="destination-toolbar"><label class="search-box" for="destination-search"><span aria-hidden="true">⌕</span><input id="destination-search" type="search" placeholder="Search destinations, districts or experiences"></label><div class="filter-buttons" aria-label="Destination categories"><button class="filter-button is-selected" data-filter="all">All places</button><button class="filter-button" data-filter="Beach">Beach</button><button class="filter-button" data-filter="Hill">Hill & nature</button><button class="filter-button" data-filter="Heritage">Culture & heritage</button></div></div>
+<!-- Script inserts result cards here; this status line also announces search results accessibly. -->
+<p id="destination-status" class="results-status" aria-live="polite">Loading destinations…</p><div id="destination-grid" class="destination-card-grid"></div></div></section>
+</main>
+<!-- Shared footer keeps destination browsing connected to the rest of the static application. -->
+<footer class="site-footer"><div class="container footer-bottom"><span>© 2026 Explore Chattogram. Static academic project.</span><a href="index.html">Back to home ↑</a></div></footer>
+<!-- This page-specific module fetches only the bundled JSON data. --><script src="js/destinations.js"></script>
+</body></html>

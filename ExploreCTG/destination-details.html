@@ -1,0 +1,16 @@
+<!doctype html>
+<!-- Dynamic destination detail shell; js/destination-details.js fills it from a local JSON record. -->
+<html lang="en"><head>
+<!-- Responsive metadata and shared styling provide a consistent detail experience. -->
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Destination Details | Explore Chattogram</title><link rel="stylesheet" href="css/style.css">
+</head><body>
+<!-- Standard navigation keeps a visitor one click from the other planning tools. -->
+<header class="site-header"><div class="container nav-wrapper"><a class="brand" href="index.html"><span class="brand-mark">EC</span><span>Explore <strong>Chattogram</strong></span></a><nav class="main-nav"><a href="index.html">Home</a><a class="active" href="destinations.html">Destinations</a><a href="guides.html">Travel Guides</a><a href="budget.html">Budget</a><a href="itinerary.html">Itinerary</a><a class="nav-login" href="login.html">Login</a></nav></div></header>
+<main id="destination-detail" aria-live="polite">
+<!-- A loading state appears briefly while the local dataset is read. -->
+<section class="detail-loading container"><p>Loading destination details…</p></section>
+</main>
+<!-- Footer remains intentionally brief because the information-rich detail section precedes it. -->
+<footer class="site-footer"><div class="container footer-bottom"><span>© 2026 Explore Chattogram. Verify live transport details before travel.</span><a href="destinations.html">← All destinations</a></div></footer>
+<!-- The page module reads the id query parameter and renders a matching local record. --><script src="js/destination-details.js"></script>
+</body></html>
